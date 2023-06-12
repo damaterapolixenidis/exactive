@@ -1,0 +1,77 @@
+.tittleheader {
+    font-size: 30px;
+    padding: 5px 10px 5px 10px;
+    background: #b7d090;
+    text-transform: uppercase;
+}
+.cstag {
+    color: #242424;
+    font-size: 19px;
+}
+
+
+.divtags {
+    width: 233px;
+    padding: 5px 10px 5px 10px;
+    float: left;
+    margin: 10px 5px 10px 5px;
+    background: #b7d090;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+     min-height: 46px;
+}
+.divtagscodes{
+    width: 233px;
+    padding: 5px 10px 5px 10px;
+    float: left;
+    margin: 10px 5px 10px 5px;
+    background: #E4B69A;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+     min-height: 46px;
+}
+.atags {
+    text-decoration: none;
+}
+.maindv {
+    text-align: center;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 1110px;
+}
+
+.tittleheader {
+    font-size: 30px;
+    padding: 5px 10px 5px 10px;
+    background: #b7d090;
+}
+div#praktikarioi {
+    background: #8FA073;
+}
+.prosopiko{
+     font-size: 30px;
+     padding: 5px 10px 5px 10px;
+     width:1030px;
+     height:40px;
+     background: #8FA073;
+     margin-top:140px;    
+     margin-bottom:20px;
+     border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
