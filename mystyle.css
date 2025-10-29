@@ -1,78 +1,141 @@
+/* Exactive Dashboard - Modernized Styles for Bootstrap 5 */
+
+/* Title Header */
 .tittleheader {
-    font-size: 30px;
-    padding: 5px 10px 5px 10px;
+    font-size: 1.875rem; /* 30px */
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
     background: #b7d090;
     text-transform: uppercase;
+    font-weight: 600;
 }
+
+/* Tag Styles */
 .cstag {
     color: #242424;
-    font-size: 19px;
-}
-.row-fluid .span12 {
-
-    margin-left: 0px!important;
+    font-size: 1.1875rem; /* 19px */
+    font-weight: 500;
 }
 
+/* Remove Bootstrap 2 override - col-12 has margin-left: 0 by default in Bootstrap 5 */
+
+/* Tag Divs */
 .divtags {
-padding-top: 12px;
-margin: 13px 0px;
+    padding-top: 0.75rem; /* 12px */
+    margin: 0.8125rem 0; /* 13px 0 */
     background: #b7d090;
     border: 1px solid #f2f2f2;
-    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-     min-height: 46px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    min-height: 2.875rem; /* 46px */
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
 }
-.divtagscodes{
-    width: 233px;
-    padding: 5px 10px 5px 10px;
+
+.divtags:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Code Tags (kept for compatibility) */
+.divtagscodes {
+    width: 14.5625rem; /* 233px */
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
     float: left;
-    margin: 10px 5px 10px 5px;
+    margin: 0.625rem 0.3125rem; /* 10px 5px */
     background: #E4B69A;
     border: 1px solid #f2f2f2;
-    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
 }
+
+.divtagscodes:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Link Styles */
 .atags {
     text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
+
+.atags:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main Container */
 .maindv {
     text-align: center;
+    padding: 1rem;
 }
+
+/* Bootstrap 5 uses .container with auto margins by default */
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 5px;
-    padding-right: 5px;
-
+    padding-left: 0.3125rem; /* 5px */
+    padding-right: 0.3125rem; /* 5px */
 }
 
-.tittleheader {
-    font-size: 30px;
-    padding: 5px 10px 5px 10px;
-    background: #b7d090;
+/* Section Headers */
+.prosopiko {
+    font-size: 1.875rem; /* 30px */
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    background: #8FA073;
+    margin-bottom: 1.25rem; /* 20px */
+    margin-top: 1.25rem; /* 20px */
+    border: 1px solid #f2f2f2;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    border-radius: 0.25rem;
 }
+
+/* Specific ID Styles */
 div#praktikarioi {
     background: #8FA073;
 }
-.prosopiko{
-     font-size: 30px;
-     padding: 5px 10px 5px 10px;
 
+/* Responsive Improvements for Mobile */
+@media (max-width: 576px) {
+    .tittleheader,
+    .prosopiko {
+        font-size: 1.5rem; /* 24px */
+    }
 
-     background: #8FA073;
- 
-     margin-bottom:20px;
-     border: 1px solid #f2f2f2;
-    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    .cstag {
+        font-size: 1rem; /* 16px */
+    }
+
+    .divtags {
+        min-height: 3.5rem; /* 56px - more touch-friendly */
+        padding-top: 1rem;
+    }
+}
+
+/* Responsive Improvements for Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .tittleheader,
+    .prosopiko {
+        font-size: 1.75rem; /* 28px */
+    }
+}
+
+/* Dark Mode Support (optional - ready for future) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here if needed in the future */
+}
+
+/* Print Styles */
+@media print {
+    .divtags,
+    .divtagscodes {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .atags {
+        text-decoration: underline;
+    }
 }

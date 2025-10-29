@@ -1,24 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="el">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-<title>Αρχείο σελίδων</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Exactive dashboard – modern link archive powered by Bootstrap 5.">
+    <title>Exactive Links Dashboard</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
 <div class="maindv">
 	<div class="cont">
 		<div class="tittleheader"><span>tickets</span></div>
 			<div class="container">
-				<div class="row-fluid">
+				<div class="row">
 				<div class="prosopiko">ΠΡΟΣΩΠΙΚΟ</div>
-					<div class="span12">
-		                <a class="atags span3" href="https://docs.google.com/document/d/1cIHPcyqXzmlMX3rYVwplrnBfP8ktxwb-3rIksCEtG6s/edit?usp=sharing" target="_blank"><div id="" class="divtags"><span class="cstag">Κωδικοί πρακτικάριων</span></div></a>
-						<a class="atags span3" href="https://docs.google.com/spreadsheets/d/16PN-pt9EwwOMVdKw1cIIDYDdX8z1z41KhGQCVuvo4Hg/edit#gid=0" target="_blank"><div class="divtags"><span class="cstag">Πρακτικάριοι	</span></div></a>
-						<a class="atags span3" href="https://docs.google.com/spreadsheets/d/1aD_OyJaenRmmXwM37YZcCTa2weXAPzDed95Wzl8v-N4/edit#gid=0" target="_blank"><div class="divtags"><span class="cstag">Προσωπικό - Συνεργάτες</span></div></a>
-						<a class="atags span3" href="" target="_blank"><div id="" class="divtags"><span class="cstag"></span></div></a>
+					<div class="col-12">
+		                <a class="atags col-12 col-sm-6 col-md-4 col-lg-3" href="https://docs.google.com/document/d/1cIHPcyqXzmlMX3rYVwplrnBfP8ktxwb-3rIksCEtG6s/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ><div id="" class="divtags"><span class="cstag">Κωδικοί πρακτικάριων</span></div></a>
+						<a class="atags col-12 col-sm-6 col-md-4 col-lg-3" href="https://docs.google.com/spreadsheets/d/16PN-pt9EwwOMVdKw1cIIDYDdX8z1z41KhGQCVuvo4Hg/edit#gid=0" target="_blank" rel="noopener noreferrer" ><div class="divtags"><span class="cstag">Πρακτικάριοι	</span></div></a>
+						<a class="atags col-12 col-sm-6 col-md-4 col-lg-3" href="https://docs.google.com/spreadsheets/d/1aD_OyJaenRmmXwM37YZcCTa2weXAPzDed95Wzl8v-N4/edit#gid=0" target="_blank" rel="noopener noreferrer" ><div class="divtags"><span class="cstag">Προσωπικό - Συνεργάτες</span></div></a>
+						<a class="atags col-12 col-sm-6 col-md-4 col-lg-3" href="" target="_blank" rel="noopener noreferrer" ><div id="" class="divtags"><span class="cstag"></span></div></a>
 					</div>
 
 				</div>
@@ -26,5 +32,23 @@
 		</div>
 	</div>
 </div>
+
+<!-- Bootstrap 5.3.3 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Security & Cleanup Script -->
+<script>
+// Ensure all external links have proper security attributes
+document.addEventListener('DOMContentLoaded', function() {
+    const externalLinks = document.querySelectorAll('a[target="_blank"]');
+    externalLinks.forEach(link => {
+        if (!link.hasAttribute('rel')) {
+            link.setAttribute('rel', 'noopener noreferrer');
+        } else if (!link.getAttribute('rel').includes('noopener')) {
+            link.setAttribute('rel', link.getAttribute('rel') + ' noopener noreferrer');
+        }
+    });
+});
+</script>
 </body>
 </html> 
